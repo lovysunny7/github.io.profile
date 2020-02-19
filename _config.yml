@@ -1,21 +1,53 @@
-# Site settings
-title: Sunnyyyyy
-description: Jekyll Theme Test
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "lovysunny7.github.io.profile2" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# Syntax highlighting
+markdown:            redcarpet
+highlighter:         pygments
 
-# User settings
-username: Sunny**
-user_description: I\'m a nomad Software Engineer, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in the <b>crypto-world</b> working for Radix, a London based startup trying to create the next massive scalable DLT. 
-user_title: God of Software Engineer (Hope so)
-email: lovysunny7@gmail.com
-# twitter_username: lovysunny7
-# github_username: lovysunny7
-# gplus_username:  
+# Permalinks
+permalink:           /:title
+relative_permalinks: true
 
-# Google-analytics
-google-analytics:
-  id: ""
+# Setup
+timezone:            your timezone # eg. Asia/Kathmandu
+locale:              your locale language # eg. en_us
+name:				         site name
+title:               site title
+tagline:             'tagline'
+description:         'description'
+url:                 site url
+rss:                 rss feed url
+baseurl:             '/'
+baseurl_posts_img:   '/assets/images/posts/'
+baseurl_featured_img: '/assets/images/hero/'
+baseurl_featured_thumbnail: '/assets/images/thumbnail/'
+baseurl_javascripts: '/assets/javascripts/'
+icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
+disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
-exclude: ['package.json', 'src' , 'node_modules']
-remote_theme : murraco/jekyll-theme-minimal-resume
+author:
+  name:           	 your name
+  url:            	 your site url
+  facebook:          username
+  twitter:           username
+  google_plus:       username
+  linkedin:          username
+  dribbble:          username
+  pinterest:         username
+  kiva:              username
+
+fb_admins:           your facebook profile id
+fb_appid:            your facebook app id
+
+# Server
+destination:      	 ./_site
+exclude:          	 [".editorconfig", ".gitignore", "bower.json", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "sass", "haml"]
+port:             	 9001
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
+      
+remote_theme : vincentchan/mickey
